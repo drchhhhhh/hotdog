@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.logo, .title {
+    text-align: center;
+}
+
+.container .logo img {
+    position: relative;
+    padding-top: 20%;
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #056892;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 10px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #58aee7;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: #58aee7;
+}
+
+button:hover {
+    background-color: #056892;
+}
+
+/* Additional Styles for the Login Form */
+.container .title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #056892;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container form .user-details .input-box input[type="email"],
+.container form .user-details .input-box input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.container form .user-details .input-box input[type="email"]:focus,
+.container form .user-details .input-box input[type="password"]:focus,
+.container form .user-details .input-box input[type="email"]:valid,
+.container form .user-details .input-box input[type="password"]:valid {
+    border-color: #58aee7;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #58aee7;
+    text-decoration: none;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #58aee7;
+    text-decoration: none;
+}
+
+form .forgot-password,
+form .button {
+    align-items: center;
+}
+
+form .forgot-password{
+    padding-right: 0%;
+}
+
+/* Additional Styles for the Submit Button */
+.button input[type="submit"] {
+    align-items: center;
+    height: 45px;
+    width: 400px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: #58aee7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+    background-color: #056892;
+}
